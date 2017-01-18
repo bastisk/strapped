@@ -1,0 +1,17 @@
+    {{#foreach posts}}
+    <div class="card">
+      <div class="card-block">
+        <h4 class="card-title"><a href="{{url}}">{{title}}</a></h4>
+        <h6 class="card-subtitle mb-2 text-muted">
+          {{author}} | <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
+        </h6>
+        <p class="card-text">
+          {{excerpt words="26"}} <a href="{{url}}">&raquo;</a>
+        </p>
+      </div>
+    </div>
+    {{/foreach}}
+
+{{!-- Previous/next page links - displayed on every page --}}
+<hr>
+{{pagination}}

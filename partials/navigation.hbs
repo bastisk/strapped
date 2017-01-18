@@ -1,0 +1,18 @@
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <a class="navbar-brand" href="#">
+         {{#if @blog.logo}}<img src="{{@blog.logo}}" style="width: 80px; height: 30px;"class="d-inline-block align-top" alt="">{{/if}}
+        {{@blog.title}}</a>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            {{#foreach navigation}}
+                <li class="nav-item {{#if current}}active{{/if}}">
+                    <a class="nav-item nav-link" href="{{url absolute=" true "}}">{{label}}</a>
+                </li>
+            {{/foreach}}
+        </ul>
+    </div>
+</nav>

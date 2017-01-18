@@ -1,0 +1,16 @@
+{{!< default}}
+
+{{!-- This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. --}}
+
+{{!-- Everything inside the #post tags pulls data from the page --}}
+{{#post}}
+<div class="jumbotron" {{#if image}}style="background-image: url({{image}})"{{/if}}>
+  <div class="container">
+    <h1>{{title}}</h1>
+  </div>
+</div>
+<div class="container">
+{{content}}
+</div>
+{{/post}}
