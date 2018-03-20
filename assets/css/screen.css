@@ -8,10 +8,9 @@ img {
     height: auto;
 }
 
-a {
-  color: black;
+.card-title > a {
+   color: black;
 }
-
 pre {
   box-sizing: border-box;
   border: 1px solid #E3EDF3;
