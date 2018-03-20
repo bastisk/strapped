@@ -11,3 +11,18 @@ img {
 a {
   color: black;
 }
+
+pre {
+  box-sizing: border-box;
+  border: 1px solid #E3EDF3;
+  padding: 10px;
+  font-size: .9em;
+  white-space: pre;
+  border-radius: 3px;
+}
+
+code, pre, tt {
+  font-family: monospace;
+  background: #F7FAFB;
+}
+
