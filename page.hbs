@@ -5,7 +5,7 @@
 
 {{!-- Everything inside the #post tags pulls data from the page --}}
 {{#post}}
-<div class="jumbotron" {{#if feature_image}}style="background-image: url({{img_url feature_image}})"{{/if}}>
+<div class="jumbotron" {{#if feature_image}}style="background-image: url({{img_url feature_image}}); background-size: cover; background-repeat:  no-repeat; background-position: center center;"{{/if}}>
   <div class="container">
     <h1>{{title}}</h1>
   </div>
